@@ -1,4 +1,5 @@
 .DS_Store
+.github
 .nyc_output
 .eslintrc.json
 .travis.yml
