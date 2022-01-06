@@ -27,7 +27,8 @@ export default function (callback) {'use strict';
 
     const value = apply(callback, this, arguments);
     ws.add(value);
-    (typeof any === 'object' && any ? wm : wv).set(any, value);
+    if (value !== any)
+      (typeof any === 'object' && any ? wm : wv).set(any, value);
     return value;
   };
 };
